@@ -8,6 +8,4 @@ dist/*
 *~
 .cache
 .coverage
-checkpoint
-htmlcov
-mnist
+.idea
