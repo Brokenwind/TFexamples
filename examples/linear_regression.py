@@ -28,7 +28,7 @@ sess.run(init)
 # 输出初始化化好的参数
 print("W=", sess.run(w), "b=", sess.run(b))
 for step in range(10):
-    summary, loss = sess.run([merge, min], feed_dict={x_input: x_data, y_input: y_data})
+    summary, _ = sess.run([merge, min], feed_dict={x_input: x_data, y_input: y_data})
     writer.add_summary(summary,step)
 writer.close()
 # 输出训练好的参数
